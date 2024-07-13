@@ -7,19 +7,19 @@ public class Product {
   private String name;
   private String description;
   private double price;
-  private int idCategory;
+  private Category category;
   private boolean promotion;
   private boolean newProduct;
 
   // metodos construtores
   
 
-  public Product(int id, String name, String description, double price, int idCategory, boolean promotion, boolean newProduct){
+  public Product(int id, String name, String description, double price, Category category, boolean promotion, boolean newProduct){
     this.id = id;
     this.name = name;
     this.description = description;
     this.price = price;
-    this.idCategory = idCategory;
+    this.category = category;
     this.promotion = promotion;
     this.newProduct = newProduct;
   }
@@ -66,12 +66,12 @@ public class Product {
     this.price = price;
   }
 
-  public int getIdCategory() {
-    return idCategory;
+  public Category getCategory() {
+    return category;
   }
 
-  public void setIdCategory(int idCategory) {
-    this.idCategory = idCategory;
+  public void setCategory(Category category) {
+    this.category = category;
   }
 
   public boolean isPromotion() {
